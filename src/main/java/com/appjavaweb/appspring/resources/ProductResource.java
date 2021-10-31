@@ -24,26 +24,26 @@ import com.appjavaweb.appspring.repositories.ProductRepository;
 		
 		Use spring boot dependency injection.*/
 		@Autowired
-		private ProductRepository categoryRepository;
+		private ProductRepository ProductRepository;
 		
 		@GetMapping
 		public ResponseEntity<List<Product>> findAll() {
-			List<Product> list = categoryRepository.findAll();
+			List<Product> list = ProductRepository.findAll();
 			return ResponseEntity.ok().body(list);
 		}
 
 		@GetMapping(value = "/{id}")
 		//@pathvariable recognizes the ID parameter of the called method.
 		public ResponseEntity<Product> findById(@PathVariable Long id) {
-			Product cat = categoryRepository.findById(id);
+			Product cat = ProductRepository.findById(id);
 			return ResponseEntity.ok().body(cat);
 		}
 
 		public ProductRepository getProductRepository() {
-			return categoryRepository;
+			return ProductRepository;
 		}
 
-		public void setProductRepository(ProductRepository categoryRepository) {
-			this.categoryRepository = categoryRepository;
+		public void setProductRepository(ProductRepository ProductRepository) {
+			this.ProductRepository = ProductRepository;
 		}
 }
