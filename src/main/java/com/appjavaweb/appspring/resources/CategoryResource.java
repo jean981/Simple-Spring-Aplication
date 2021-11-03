@@ -20,7 +20,6 @@ import com.appjavaweb.appspring.repositories.CategoryRepository;
 
 	/* This is wrong. That's not how you compose objects this way.
 	private CategoryRepository categoryRepository = new CategoryRepository();
-		
 		Use spring boot dependency injection.*/
 		@Autowired
 		private CategoryRepository categoryRepository;
@@ -32,17 +31,9 @@ import com.appjavaweb.appspring.repositories.CategoryRepository;
 		}
 
 		@GetMapping(value = "/{id}")
+		//@pathvariable recognizes the ID parameter of the called method.
 		public ResponseEntity<Category> findById(@PathVariable Long id) {
-			//@pathvariable recognizes the ID parameter of the called method.
-			Category cat = categoryRepository.findById(id);
+			Category cat = categoryRepository.findById(id).get();
 			return ResponseEntity.ok().body(cat);
-		}
-
-		public CategoryRepository getCategoryRepository() {
-			return categoryRepository;
-		}
-
-		public void setCategoryRepository(CategoryRepository categoryRepository) {
-			this.categoryRepository = categoryRepository;
 		}
 }

@@ -1,6 +1,5 @@
 package com.appjavaweb.appspring.resources;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +34,7 @@ import com.appjavaweb.appspring.repositories.ProductRepository;
 		@GetMapping(value = "/{id}")
 		//@pathvariable recognizes the ID parameter of the called method.
 		public ResponseEntity<Product> findById(@PathVariable Long id) {
-			Product cat = ProductRepository.findById(id);
+			Product cat = ProductRepository.findById(id).get();
 			return ResponseEntity.ok().body(cat);
 		}
 
