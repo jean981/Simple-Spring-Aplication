@@ -24,6 +24,20 @@
 
 :small_blue_diamond: [How to run the application](#How to run the application)
 
+:small_blue_diamond: [Languages, dependencies and libs used](#languages-dependencies-and-libs-used)
+
+:small_blue_diamond: [Use case](#use-case)
+
+:small_blue_diamond: [How to run the application](#How to run the application)
+
+:small_blue_diamond: [Troubleshooting](#troubleshooting)
+
+:small_blue_diamond: [Know a little more](#know-a-little-more)
+
+:small_blue_diamond: [Developers :: Collaborators](#developers-collaborators)
+
+:small_blue_diamond: [License](#license)
+
 ## Project description 
 
 <p align="justify">
@@ -75,7 +89,7 @@ Build a simple application with two classes. Each class has 2 instances of objec
 
 ## Know a little more
 
-:memo: Links sobre REST
+:memo: about REST
 https://restfulapi.net/
 https://martinfowler.com/articles/richardsonMaturityModel.html
 https://pt.stackoverflow.com/questions/45783/o-que-%C3%A9-rest-e-restful/45787
