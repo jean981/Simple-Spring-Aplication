@@ -12,23 +12,22 @@
 <img src="https://img.shields.io/badge/%20-help--wanted-%23159818">
 
 </p>
-##  Topics 
 
-:small_blue_diamond: [Project description](#Project description)
+## Topics 
+
+:small_blue_diamond: [Project description](#Project-description)
 
 :small_blue_diamond: [Functionalities](#Functionalities)
 
-:small_blue_diamond: [Application Deploy](#Application Deploy)
+:small_blue_diamond: [Application Deploy](#Application-Deploy)
 
-:small_blue_diamond: [Requirements](#Application Deploy)
+:small_blue_diamond: [Requirements](#Requirements)
 
-:small_blue_diamond: [How to run the application](#How to run the application)
+:small_blue_diamond: [How to run the application](#How-to-run-the-application)
 
 :small_blue_diamond: [Languages, dependencies and libs used](#languages-dependencies-and-libs-used)
 
 :small_blue_diamond: [Use case](#use-case)
-
-:small_blue_diamond: [How to run the application](#How to run the application)
 
 :small_blue_diamond: [Troubleshooting](#troubleshooting)
 
